@@ -66,12 +66,13 @@
 							<div class="banner_content">
 								<h3>Hi There,</h3>
 								<h1 class="cd-headline clip">
-									<span class="fw_600">I'm <area shape="default" coords="" href="" alt=""></span>
+									<span class="fw_600">We're <area shape="default" coords="" href="" alt=""></span>
 									<span class="cd-words-wrapper">
-										<b class="is-visible fw_600">Andy Augusto</b>
+										<b class="is-visible fw_600">Heidy Maria Javier</b>
+										<b class="is-visible fw_600">Andy Augusto Encarnacion Morel</b>
 										<b class="fw_600">Web Designer</b>
 										<b class="fw_600">Web Developer</b>
-										<b class="fw_600">Student</b>
+										<b class="fw_600">Students</b>
 									</span>
 								</h1>
 								<p>Our powerful tool converts audio to text quickly and accurately. Whether for personal or professional use, we make transcription easy and reliable. Try it now!</p>
@@ -132,11 +133,7 @@
             </div>
         </div>
 
-		<form id="questionForm">
-			<input type="text" id="questionInput" placeholder="Ask a question">
-			<button type="submit">Ask</button>
-		</form>
-	
+		
 		<div id="chatbotResponse"></div>
     </div>
 </section>
@@ -271,7 +268,7 @@
 						<div class="col-lg-3 col-md-3">
 							<div class="funfact">
 								<i class="icofont-users"></i>
-								<h3><span class="counterUp">2</span>😞</h3>
+								<h3><span class="counterUp">2</span>+</h3>
 								<p>Happy Clients</p>
 							</div>
 						</div>
@@ -279,7 +276,7 @@
 						<div class="col-lg-3 col-md-3">
 							<div class="funfact">
 								<i class="icofont-users-alt-5"></i>
-								<h3><span class="counterUp">3</span>+</h3>
+								<h3><span class="counterUp">2</span>+</h3>
 								<p>Team Members</p>
 							</div>
 						</div>
@@ -300,7 +297,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-								<p>Copyright © 2024 Andy </p>
+								<p>Copyright © 2024 Heidy Maria, Andy Augusto </p>
 							</div>
 						</div>
 					</div>
@@ -313,30 +310,7 @@
 			<i class="fa fa-arrow-up"></i>
 		</a>
 
-		<script>
-			// Tu código JavaScript existente...
-	
-			document.getElementById('questionForm').addEventListener('submit', function(event) {
-				event.preventDefault();
-				const question = document.getElementById('questionInput').value;
-	
-				fetch('/chatbot', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify({ question: question })
-				})
-				.then(response => response.json())
-				.then(data => {
-					document.getElementById('chatbotResponse').innerText = data.answer;
-				})
-				.catch(error => {
-					console.error('Error:', error);
-					document.getElementById('chatbotResponse').innerText = 'Error processing the question.';
-				});
-			});
-		</script>
+		
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="/static/assets/js/jquery-min.js"></script>
 		<script src="/static/assets/js/popper.min.js"></script>
