@@ -3,7 +3,7 @@ name: Deploy to Surge
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -20,4 +20,4 @@ jobs:
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
-          surge ./ --domain https://mi-pagina-web.surge.sh
+          surge ./ --domain HeidyYAndy.surge.sh
